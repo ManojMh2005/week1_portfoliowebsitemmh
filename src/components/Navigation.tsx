@@ -41,10 +41,10 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-md border-b border-border shadow-lg">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="text-xl font-bold text-primary">
+          <div className="text-xl font-bold text-primary text-glow">
             Manoj Manjappa
           </div>
           
@@ -56,8 +56,8 @@ const Navigation = () => {
                 className={cn(
                   "px-3 py-2 rounded-md text-sm font-medium transition-smooth",
                   activeSection === item.id
-                    ? "bg-primary text-primary-foreground"
-                    : "text-foreground hover:text-primary hover:bg-accent"
+                    ? "bg-primary text-primary-foreground glow-primary"
+                    : "text-foreground hover:text-primary hover:bg-accent/50"
                 )}
               >
                 {item.label}
@@ -67,7 +67,7 @@ const Navigation = () => {
 
           {/* Mobile menu button - simplified for now */}
           <div className="md:hidden">
-            <button className="text-primary">Menu</button>
+            <button className="text-primary hover:text-primary-light transition-smooth">Menu</button>
           </div>
         </div>
       </div>
