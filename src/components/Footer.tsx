@@ -18,7 +18,7 @@ const Footer = () => {
           
           <div className="flex justify-center space-x-8 mb-8">
             <a 
-              href="mailto:manoj.halammanavar@example.com"
+              href="mailto:mhmanojmanu92@gmail.com"
               className="text-muted-foreground hover:text-primary transition-smooth hover:text-glow"
             >
               Email
@@ -32,7 +32,7 @@ const Footer = () => {
               LinkedIn
             </a>
             <a 
-              href="tel:+919876543210"
+              href="tel:+918431858148"
               className="text-muted-foreground hover:text-primary transition-smooth hover:text-glow"
             >
               Phone

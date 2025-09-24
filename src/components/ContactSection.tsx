@@ -6,15 +6,15 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "manoj.halammanavar@example.com",
-      href: "mailto:manoj.halammanavar@example.com",
+      value: "mhmanojmanu92@gmail.com",
+      href: "mailto:mhmanojmanu92@gmail.com",
       description: "Drop me a line anytime"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 98765 43210",
-      href: "tel:+919876543210",
+      value: "+91 84318 58148",
+      href: "tel:+918431858148",
       description: "Available Mon-Fri, 9am-6pm"
     },
     {
@@ -98,7 +98,7 @@ const ContactSection = () => {
                   <Button 
                     size="lg"
                     className="bg-primary text-primary-foreground hover:bg-primary-light hover:glow-primary"
-                    onClick={() => window.location.href = 'mailto:manoj.halammanavar@example.com'}
+                    onClick={() => window.location.href = 'mailto:mhmanojmanu92@gmail.com'}
                   >
                     <Send className="h-5 w-5 mr-2" />
                     Send Email
