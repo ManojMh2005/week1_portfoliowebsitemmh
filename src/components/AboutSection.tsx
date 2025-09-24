@@ -42,10 +42,10 @@ const AboutSection = () => {
                     <div>
                       <p className="text-sm text-muted-foreground">Email</p>
                       <a 
-                        href="mailto:manoj.halammanavar@example.com" 
+                        href="mailto:mhmanojmanu92@gmail.com" 
                         className="text-primary hover:text-primary-dark transition-smooth"
                       >
-                        manoj.halammanavar@example.com
+                        mhmanojmanu92@gmail.com
                       </a>
                     </div>
                   </div>
@@ -57,10 +57,10 @@ const AboutSection = () => {
                     <div>
                       <p className="text-sm text-muted-foreground">Phone</p>
                       <a 
-                        href="tel:+919876543210" 
+                        href="tel:+918431858148" 
                         className="text-primary hover:text-primary-dark transition-smooth"
                       >
-                        +91 98765 43210
+                        +91 84318 58148
                       </a>
                     </div>
                   </div>
