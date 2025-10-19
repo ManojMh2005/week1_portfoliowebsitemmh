@@ -24,7 +24,7 @@ const HeroSection = () => {
             <img
               src={profileImage}
               alt="Manoj Manjappa Halammanavar - Profile"
-              className="w-48 h-48 rounded-full mx-auto object-cover ring-4 ring-primary/30 glow-primary animate-float"
+              className="w-56 h-56 rounded-full mx-auto object-cover object-top glow-primary animate-float"
             />
           </div>
           
