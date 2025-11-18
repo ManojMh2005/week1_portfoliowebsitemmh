@@ -33,7 +33,7 @@ const ContactSection = () => {
     }
   ];
 
-  const interests = ["Music Listening", "Cricket", "Movies", "Technology", "Reading"];
+  const interests = ["Music Listening", "Cricket", "Movies"];
 
   return (
     <section id="contact" className="py-20 section-gradient relative">
