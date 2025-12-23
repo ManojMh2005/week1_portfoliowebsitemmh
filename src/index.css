@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Dark Portfolio Design System */
+
+@layer base {
+  :root {
+    /* Dark base colors */
+    --background: 222 15% 8%;
+    --foreground: 210 40% 95%;
+
+    /* Professional blue theme for dark mode */
+    --primary: 217 91% 65%;
+    --primary-foreground: 222 15% 8%;
+    --primary-light: 217 91% 75%;
+    --primary-dark: 217 91% 55%;
+
+    /* Dark card and surface colors */
+    --card: 222 12% 12%;
+    --card-foreground: 210 40% 95%;
+    
+    --popover: 222 12% 12%;
+    --popover-foreground: 210 40% 95%;
+
+    /* Dark secondary and accent colors */
+    --secondary: 222 10% 16%;
+    --secondary-foreground: 210 40% 95%;
+
+    --muted: 222 10% 14%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 222 10% 18%;
+    --accent-foreground: 217 91% 75%;
+
+    /* Status colors for dark theme */
+    --destructive: 0 65% 60%;
+    --destructive-foreground: 210 40% 95%;
+
+    /* Dark border and inputs */
+    --border: 222 10% 20%;
+    --input: 222 10% 18%;
+    --ring: 217 91% 65%;
+
+    /* Design elements */
+    --radius: 0.75rem;
+
+    /* Dark portfolio specific tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(222 15% 8%) 0%, hsl(222 12% 15%) 50%, hsl(217 91% 65% / 0.1) 100%);
+    --section-gradient: linear-gradient(180deg, hsl(222 12% 10%) 0%, hsl(222 12% 12%) 100%);
+    --card-shadow: 0 4px 20px hsla(0 0% 0% / 0.3);
+    --card-shadow-hover: 0 8px 30px hsla(217 91% 65% / 0.2);
+    --glow-primary: 0 0 40px hsla(217 91% 65% / 0.3);
+    
+    /* Animation timings */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Portfolio specific components */
+  .hero-gradient {
+    background: var(--hero-gradient);
+    position: relative;
+  }
+  
+  .hero-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at center, hsl(217 91% 65% / 0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  
+  .section-gradient {
+    background: var(--section-gradient);
+  }
+  
+  .card-shadow {
+    box-shadow: var(--card-shadow);
+    border: 1px solid hsl(var(--border));
+  }
+  
+  .card-shadow-hover {
+    box-shadow: var(--card-shadow-hover);
+    border: 1px solid hsl(var(--primary) / 0.3);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+  
+  .glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.5);
+  }
+}
