@@ -103,20 +103,6 @@ const PublicationsSection = () => {
           ))}
         </div>
 
-        {/* Research Interests */}
-        <div className="mt-16 text-center">
-          <h3 className="text-2xl font-semibold text-foreground mb-8">Research Interests</h3>
-          <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
-            {["Machine Learning", "Computer Vision", "Image Processing", "Educational Technology", "Automation", "Artificial Intelligence", "Data Analytics"].map((interest, index) => (
-              <div 
-                key={index}
-                className="bg-primary/10 text-primary px-4 py-2 rounded-full font-medium hover:bg-primary/20 transition-smooth cursor-default"
-              >
-                {interest}
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

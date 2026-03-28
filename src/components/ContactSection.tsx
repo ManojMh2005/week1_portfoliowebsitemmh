@@ -124,34 +124,6 @@ const ContactSection = () => {
             </div>
           </div>
 
-          {/* Personal Interests */}
-          <div className="lg:col-span-1">
-            <div className="card-shadow animate-fade-in h-fit bg-card rounded-lg p-8">
-              <h3 className="text-xl font-semibold text-foreground mb-6">
-                Personal Interests
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                When I'm not coding or studying, you can find me:
-              </p>
-              <div className="space-y-4">
-                {interests.map((interest, index) => (
-                  <div 
-                    key={index}
-                    className="flex items-center space-x-3 p-3 bg-accent/50 rounded-lg hover:bg-accent/70 transition-smooth"
-                  >
-                    <div className="w-2 h-2 bg-primary rounded-full glow-primary"></div>
-                    <span className="text-foreground">{interest}</span>
-                  </div>
-                ))}
-              </div>
-              
-              <div className="mt-8 p-4 bg-primary/10 rounded-lg border border-primary/20">
-                <p className="text-sm text-muted-foreground italic">
-                  "Passionate about technology and always eager to learn something new every day."
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
