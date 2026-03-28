@@ -1,31 +1,37 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Code, Database, Briefcase, Cpu } from "lucide-react";
+import { Code, Database, Globe, Cpu, Wrench, BookOpen } from "lucide-react";
 
 const SkillsSection = () => {
   const skillCategories = [
     {
       icon: Code,
       title: "Programming Languages",
-      skills: ["C", "Java", "HTML/CSS", "JavaScript"],
-      color: "text-blue-600"
+      skills: ["Java", "Python", "C"]
     },
     {
-      icon: Database,
-      title: "Database & Systems",
-      skills: ["Database Management", "Data Structures", "System Design"],
-      color: "text-green-600"
-    },
-    {
-      icon: Briefcase,
-      title: "Project Management",
-      skills: ["Project Planning", "Team Coordination", "Agile Methodology"],
-      color: "text-purple-600"
+      icon: Globe,
+      title: "Frontend Development",
+      skills: ["HTML", "CSS", "JavaScript"]
     },
     {
       icon: Cpu,
-      title: "Technologies",
-      skills: ["Machine Learning", "Image Processing", "OpenCV", "Web Development"],
-      color: "text-red-600"
+      title: "Backend Development",
+      skills: ["Node.js", "RESTful API Design"]
+    },
+    {
+      icon: Database,
+      title: "Database",
+      skills: ["SQL", "MySQL"]
+    },
+    {
+      icon: BookOpen,
+      title: "Core CS Concepts",
+      skills: ["Data Structures & Algorithms", "Operating Systems", "Core Java", "Computer Networks", "DBMS"]
+    },
+    {
+      icon: Wrench,
+      title: "Tools",
+      skills: ["Git", "GitHub", "MS Excel"]
     }
   ];
 
@@ -39,7 +45,7 @@ const SkillsSection = () => {
           <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
             <Card 
               key={index}
@@ -76,7 +82,7 @@ const SkillsSection = () => {
             Technical Proficiencies
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
-            {["C Programming", "Java", "HTML/CSS", "Data Structures", "Database Management", "Project Management", "Machine Learning", "Image Processing", "OpenCV", "Web Development"].map((skill, index) => (
+            {["Java", "Python", "C", "HTML/CSS", "JavaScript", "Node.js", "REST APIs", "SQL", "MySQL", "Git", "GitHub", "Data Structures", "Operating Systems", "Computer Networks", "DBMS"].map((skill, index) => (
               <div 
                 key={index}
                 className="bg-primary text-primary-foreground px-4 py-2 rounded-full font-medium hover:bg-primary-dark transition-smooth cursor-default"

@@ -1,25 +1,28 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { GraduationCap, Calendar } from "lucide-react";
+import { GraduationCap, Calendar, MapPin } from "lucide-react";
 
 const EducationSection = () => {
   const education = [
     {
       level: "Bachelor of Engineering in CSE",
-      institution: "JNNCE",
+      institution: "Jawaharlal Nehru New College of Engineering",
+      location: "Shivamogga, Karnataka",
       grade: "8.2 CGPA",
       year: "2022 – Present",
-      description: "Currently pursuing Computer Science & Engineering degree with focus on software development, data structures, and project management."
+      description: "Pursuing Computer Science & Engineering degree with focus on backend development, data structures, database management, and ML-based systems."
     },
     {
-      level: "Pre-University",
+      level: "Pre-University Education",
       institution: "Morarji Desai Residential PU Science College",
+      location: "Savanur, Karnataka",
       grade: "91.6%",
       year: "2022",
       description: "Completed pre-university education in Science stream with excellent academic performance."
     },
     {
-      level: "Secondary School",
+      level: "Secondary School Education",
       institution: "Morarji Desai Model Residential School",
+      location: "Chikkerur, Karnataka",
       grade: "92.8%",
       year: "2020",
       description: "Completed secondary education with outstanding academic achievement and strong foundation in mathematics and sciences."
@@ -54,9 +57,13 @@ const EducationSection = () => {
                         {edu.grade}
                       </div>
                     </div>
-                    <div className="flex items-center space-x-2 text-muted-foreground">
+                    <div className="flex items-center space-x-2 text-muted-foreground mb-1">
                       <Calendar className="h-4 w-4" />
                       <span className="text-sm">{edu.year}</span>
+                    </div>
+                    <div className="flex items-center space-x-2 text-muted-foreground">
+                      <MapPin className="h-4 w-4" />
+                      <span className="text-sm">{edu.location}</span>
                     </div>
                   </div>
 

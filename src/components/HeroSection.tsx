@@ -33,7 +33,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-fade-in">
-            A passionate and driven CSE student eager to contribute innovative solutions.
+            CSE Student | Backend Developer | ML Enthusiast
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">

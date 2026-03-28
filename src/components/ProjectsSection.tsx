@@ -6,19 +6,27 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "E-Blood Banking System",
-      year: "2024",
-      description: "A comprehensive digital platform for managing and tracking blood availability and donor information. Features include donor registration, blood inventory management, and emergency request handling.",
-      technologies: ["Java", "Database Management", "Web Development", "System Design"],
+      year: "06/2024 – 10/2024",
+      description: "Developed a web-based application to manage blood donor records and blood inventory. Designed a relational database using MySQL to track donors, blood groups, and blood units. Implemented real-time blood availability tracking with input validation for secure data handling.",
+      technologies: ["HTML", "CSS", "JavaScript", "Python", "MySQL", "Git", "GitHub"],
       status: "Completed",
       type: "Web Application"
     },
     {
-      title: "Automated OMR Analyzer Using ML & Image Processing",
-      year: "2025 – Present",
-      description: "An advanced OMR sheet analyzer utilizing OpenCV and Machine Learning algorithms to achieve high accuracy even under imperfect input conditions. The system handles various lighting conditions and paper orientations.",
-      technologies: ["Machine Learning", "OpenCV", "Image Processing", "Python"],
+      title: "Automated OMR Analyser Using ML & Image Processing",
+      year: "03/2025 – 11/2025",
+      description: "Designed an ML-based Optical Mark Recognition system for automated evaluation of MCQ answer sheets. Implemented image preprocessing techniques using OpenCV. Trained and validated ML model under varying lighting and noise conditions. Integrated backend using Flask for result processing and report generation.",
+      technologies: ["HTML/CSS", "Python", "Django", "OpenCV", "ML", "Flask"],
       status: "In Progress",
       type: "Research Project"
+    },
+    {
+      title: "E-Commerce Web System",
+      year: "09/2025 – 01/2026",
+      description: "Designed RESTful APIs for product, order, and user management. Implemented user authentication and role-based access control. Designed normalized database schema ensuring data integrity and efficient query handling. Optimized database queries and handled transactional operations.",
+      technologies: ["HTML", "CSS", "JavaScript", "Python", "Node.js", "MySQL", "Git", "GitHub", "API Architecture"],
+      status: "Completed",
+      type: "Web Application"
     }
   ];
 
@@ -32,7 +40,7 @@ const ProjectsSection = () => {
           <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card 
               key={index}
