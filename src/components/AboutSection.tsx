@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, Linkedin } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, MapPin } from "lucide-react";
 
 const AboutSection = () => {
   return (
@@ -18,13 +18,10 @@ const AboutSection = () => {
               Profile
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              A passionate and driven individual with a creative mindset. Eager to contribute 
-              innovative solutions and grow within dynamic, forward-thinking environments.
+              Computer Science Engineering student with hands-on experience in designing secure and scalable backend systems using Java and Python along with web development. Experienced in database design, authentication mechanisms, and ML-based computer vision systems.
             </p>
             <p className="text-muted-foreground">
-              Currently pursuing Bachelor of Engineering in Computer Science & Engineering 
-              at JNNCE, I am dedicated to learning cutting-edge technologies and applying 
-              them to solve real-world problems.
+              Strong foundation in Data Structures, Operating Systems, and DBMS with practical implementation experience. Currently pursuing Bachelor of Engineering in CSE at Jawaharlal Nehru New College of Engineering, Shivamogga.
             </p>
           </div>
 
@@ -72,13 +69,42 @@ const AboutSection = () => {
                     <div>
                       <p className="text-sm text-muted-foreground">LinkedIn</p>
                       <a 
-                        href="https://linkedin.com/in/manoj-halammanavar" 
+                        href="https://linkedin.com/in/manoj-m-h-4600aa310" 
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-primary hover:text-primary-dark transition-smooth"
                       >
-                        linkedin.com/in/manoj-halammanavar
+                        linkedin.com/in/manoj-m-h-4600aa310
                       </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center space-x-4">
+                    <div className="p-3 bg-primary/10 rounded-full">
+                      <Github className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground">GitHub</p>
+                      <a 
+                        href="https://github.com/ManojMh2005" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:text-primary-dark transition-smooth"
+                      >
+                        github.com/ManojMh2005
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center space-x-4">
+                    <div className="p-3 bg-primary/10 rounded-full">
+                      <MapPin className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground">Location</p>
+                      <span className="text-primary">
+                        Ranebennur, Karnataka, India
+                      </span>
                     </div>
                   </div>
                 </div>

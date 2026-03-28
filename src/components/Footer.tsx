@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="mb-8">
             <h3 className="text-2xl font-bold mb-2 text-primary text-glow">Manoj Manjappa Halammanavar</h3>
             <p className="text-muted-foreground">
-              CSE Student | Innovative Problem Solver | Future Technology Leader
+              CSE Student | Backend Developer | ML Enthusiast
             </p>
           </div>
           
@@ -24,12 +24,20 @@ const Footer = () => {
               Email
             </a>
             <a 
-              href="https://linkedin.com/in/manoj-halammanavar"
+              href="https://linkedin.com/in/manoj-m-h-4600aa310"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-smooth hover:text-glow"
             >
               LinkedIn
+            </a>
+            <a 
+              href="https://github.com/ManojMh2005"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-smooth hover:text-glow"
+            >
+              GitHub
             </a>
             <a 
               href="tel:+918431858148"

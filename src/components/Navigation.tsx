@@ -10,6 +10,7 @@ const Navigation = () => {
     { id: "education", label: "Education" },
     { id: "skills", label: "Skills" },
     { id: "projects", label: "Projects" },
+    { id: "internships", label: "Internships" },
     { id: "certificates", label: "Certificates" },
     { id: "publications", label: "Publications" },
     { id: "contact", label: "Contact" }
@@ -65,7 +66,7 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Mobile menu button - simplified for now */}
+          {/* Mobile menu button */}
           <div className="md:hidden">
             <button className="text-primary hover:text-primary-light transition-smooth">Menu</button>
           </div>

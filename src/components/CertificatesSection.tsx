@@ -4,10 +4,10 @@ import { Award, ExternalLink } from "lucide-react";
 const CertificatesSection = () => {
   const certificates = [
     {
-      title: "Project Management Certificate",
-      issuer: "Professional Certification Authority",
-      description: "Comprehensive training in project planning, execution, and team management methodologies.",
-      skills: ["Project Planning", "Team Management", "Risk Assessment", "Quality Control"]
+      title: "Software Testing",
+      issuer: "NPTEL",
+      description: "Comprehensive course covering software testing methodologies, test case design, and quality assurance practices.",
+      skills: ["Software Testing", "Test Case Design", "Quality Assurance"]
     },
     {
       title: "Java Programming",
@@ -16,8 +16,14 @@ const CertificatesSection = () => {
       skills: ["Object-Oriented Programming", "Java Collections", "Exception Handling", "Multithreading"]
     },
     {
-      title: "IJRASET Certificate for Automated OMR Analyzer",
-      issuer: "International Journal of Research and Analytical Reviews",
+      title: "Project Management",
+      issuer: "Simplilearn Skillup",
+      description: "Training in project planning, execution, team management, and agile methodologies.",
+      skills: ["Project Planning", "Team Management", "Agile Methodology", "Risk Assessment"]
+    },
+    {
+      title: "Automated OMR Analyser using ML & Image Processing",
+      issuer: "IJRASET",
       description: "Recognition for research work in automated OMR analysis using machine learning and image processing techniques.",
       skills: ["Research Publication", "Machine Learning", "Image Processing", "Academic Writing"]
     }
@@ -33,7 +39,7 @@ const CertificatesSection = () => {
           <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {certificates.map((cert, index) => (
             <Card 
               key={index}

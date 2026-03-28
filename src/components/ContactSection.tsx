@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, Linkedin, MapPin, Send } from "lucide-react";
+import { Mail, Phone, Linkedin, MapPin, Send, Github } from "lucide-react";
 
 const ContactSection = () => {
   const contactInfo = [
@@ -20,14 +20,21 @@ const ContactSection = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/manoj-halammanavar",
-      href: "https://linkedin.com/in/manoj-halammanavar",
+      value: "linkedin.com/in/manoj-m-h-4600aa310",
+      href: "https://linkedin.com/in/manoj-m-h-4600aa310",
       description: "Let's connect professionally"
+    },
+    {
+      icon: Github,
+      label: "GitHub",
+      value: "github.com/ManojMh2005",
+      href: "https://github.com/ManojMh2005",
+      description: "Check out my projects"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Karnataka, India",
+      value: "Ranebennur, Karnataka, India",
       href: "#",
       description: "Open to opportunities"
     }
@@ -72,8 +79,8 @@ const ContactSection = () => {
                       </p>
                       <a 
                         href={contact.href}
-                        target={contact.label === 'LinkedIn' ? '_blank' : undefined}
-                        rel={contact.label === 'LinkedIn' ? 'noopener noreferrer' : undefined}
+                        target={contact.label === 'LinkedIn' || contact.label === 'GitHub' ? '_blank' : undefined}
+                        rel={contact.label === 'LinkedIn' || contact.label === 'GitHub' ? 'noopener noreferrer' : undefined}
                         className="text-primary hover:text-primary-light transition-smooth font-medium break-all hover:text-glow"
                       >
                         {contact.value}
@@ -107,7 +114,7 @@ const ContactSection = () => {
                     variant="outline"
                     size="lg"
                     className="border-primary/50 text-primary hover:bg-primary/10 hover:border-primary"
-                    onClick={() => window.open('https://linkedin.com/in/manoj-halammanavar', '_blank')}
+                    onClick={() => window.open('https://linkedin.com/in/manoj-m-h-4600aa310', '_blank')}
                   >
                     <Linkedin className="h-5 w-5 mr-2" />
                     Connect on LinkedIn
