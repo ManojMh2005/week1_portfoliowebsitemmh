@@ -40,7 +40,7 @@ const ContactSection = () => {
     }
   ];
 
-  const interests = ["Music Listening", "Cricket", "Movies"];
+  
 
   return (
     <section id="contact" className="py-20 section-gradient relative">
@@ -56,9 +56,9 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="max-w-4xl mx-auto">
           {/* Contact Information */}
-          <div className="lg:col-span-2">
+          <div>
             <div className="grid md:grid-cols-2 gap-6">
               {contactInfo.map((contact, index) => (
                 <div 
