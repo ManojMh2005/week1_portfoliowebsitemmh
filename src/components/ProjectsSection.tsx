@@ -17,7 +17,7 @@ const ProjectsSection = () => {
       year: "03/2025 – 11/2025",
       description: "Designed an ML-based Optical Mark Recognition system for automated evaluation of MCQ answer sheets. Implemented image preprocessing techniques using OpenCV. Trained and validated ML model under varying lighting and noise conditions. Integrated backend using Flask for result processing and report generation.",
       technologies: ["HTML/CSS", "Python", "Django", "OpenCV", "ML", "Flask"],
-      status: "In Progress",
+      status: "Completed",
       type: "Research Project"
     },
     {
