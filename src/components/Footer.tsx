@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="mb-8">
             <h3 className="text-2xl font-bold mb-2 text-primary text-glow">Manoj Manjappa Halammanavar</h3>
             <p className="text-muted-foreground">
-              CSE Student | Full Stack Developer
+              CSE Student | Backend Developer & ML Enthusiast
             </p>
           </div>
           
